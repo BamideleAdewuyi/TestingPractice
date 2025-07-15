@@ -10,3 +10,8 @@ test('Add method returns sum of two arguments', () => {
     const calc = new Calculator;
     expect(calc.add(1, 2)).toBe(3);
 })
+
+test('Add method returns sum of a different two arguments', () => {
+    const calc = new Calculator;
+    expect(calc.add(3343, 4535)).toBe(7878)
+})
