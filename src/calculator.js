@@ -12,7 +12,7 @@ class Calculator {
     }
 
     multiply(a, b) {
-        return "something";
+        return a*b;
     }
 }
 
