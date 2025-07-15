@@ -24,3 +24,7 @@ test('Subtract method returns first argument minus second argument', () => {
 test('Divide method returns something', () => {
     expect(calc.divide(6, 2)).toBeDefined()
 })
+
+test('Divide method returns first argument divided by second argument', () => {
+    expect(calc.divide(8, 2)).toBe(4);
+})
