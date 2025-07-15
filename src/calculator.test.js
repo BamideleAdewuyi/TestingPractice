@@ -16,3 +16,7 @@ test('Add method returns sum of a different two arguments', () => {
 test('Subtract method returns something', () => {
     expect(calc.subtract(2,3)).toBeDefined();
 })
+
+test('Subtract method returns first argument minus second argument', () => {
+    expect(calc.subtract(2, 3)).toBe(-1)
+})
