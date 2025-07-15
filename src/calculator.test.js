@@ -20,3 +20,7 @@ test('Subtract method returns something', () => {
 test('Subtract method returns first argument minus second argument', () => {
     expect(calc.subtract(2, 3)).toBe(-1)
 })
+
+test('Divide method returns something', () => {
+    expect(calc.divide(6, 2)).toBeDefined()
+})
