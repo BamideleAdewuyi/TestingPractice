@@ -8,7 +8,7 @@ class Calculator {
     }
 
     divide(a, b) {
-        return 'something';
+        return a/b;
     }
 }
 
