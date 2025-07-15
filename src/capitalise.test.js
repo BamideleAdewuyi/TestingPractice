@@ -5,5 +5,9 @@ test('Function exists', () => {
 });
 
 test('Function reverses string', () => {
-    expect(capitalise('capitalise')).toBe('Capitalise')
+    expect(capitalise('capitalise')).toBe('Capitalise');
 });
+
+test('Function reverses another string', () => {
+    expect(capitalise('another')).toBe('Another');
+})
