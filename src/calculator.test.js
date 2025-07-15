@@ -31,4 +31,8 @@ test('Divide method returns first argument divided by second argument', () => {
 
 test("Multiply method returns something", () => {
     expect(calc.multiply(9, 5)).toBeDefined();
+});
+
+test("Multiply method returns product of arguments", () => {
+    expect(calc.multiply(7, 8)).toBe(56);
 })
