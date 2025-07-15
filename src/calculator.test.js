@@ -1,6 +1,7 @@
-const calculator = require('./calculator');
+import Calculator from "./calculator";
 
 
 test('Object add method returns something', () => {
-    expect(calculator.add(1, 2)).toBeDefined();
+    const calc = new Calculator;
+    expect(calc.add(1, 2)).toBeDefined();
 })
