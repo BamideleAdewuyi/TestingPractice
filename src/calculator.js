@@ -1,6 +1,6 @@
 class Calculator {
     add(a, b) {
-        return "something"
+        return a + b;
     }
 }
 
