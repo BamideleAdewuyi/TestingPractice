@@ -1,5 +1,5 @@
 function reverseString(string) {
-    return;
+    return "Anything";
 }
 
 module.exports = reverseString;
