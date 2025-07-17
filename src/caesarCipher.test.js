@@ -11,3 +11,7 @@ test('Function shifts abc to def', () => {
 test('Function can handle wrapping from z to a. ("xyz", 3) should return "abc"', () => {
     expect(caesarCipher('xyz', 3)).toBe('abc')
 });
+
+test('Function handles case preservation', () => {
+    expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
+});
