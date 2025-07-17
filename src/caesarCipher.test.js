@@ -19,3 +19,7 @@ test('Function handles case preservation', () => {
 test('Function leaves punctuation unchanged', () => {
     expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!')
 })
+
+test('Khoor, Zruog! returns Nkrru, Cuxrj!', () => {
+    expect(caesarCipher("Khoor, Zruog!", 3)).toBe("Nkrru, Cuxrj!")
+})
