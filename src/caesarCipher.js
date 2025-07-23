@@ -1,10 +1,18 @@
-export function caesarCipher(string, shift) {
-    let code = [];
-    const letters = new RegExp(/[a-zA-Z]/, "i")
-    for (let i = 0; i < string.length; i++) {
-        const newCharCode = letters.test(string[i]) ? string.charCodeAt(i) + shift : string.charCodeAt(i);
-        newCharCode < 122 ? code.push(newCharCode) : code.push(newCharCode - 26);
-    }
-    let cipher = code.map((x) => String.fromCharCode(x)).join("")
-    return cipher;
-};
+function charToInt(char) {
+    return char.charCodeAt(0)
+}
+
+function intToChar(code) {
+    return String.fromCharCode(code);
+}
+
+export function caesarCipher(str, shift) {
+    const oldArr = str.split("")
+    const regex = /[A-Za-z]/;
+    const newCodes = oldArr.map(char => 
+    regex.test(char) ? charToInt(char) + shift : charToInt(char)
+    )
+    const newArr = newCodes.map(code => intToChar(code))
+    const res = newArr.join("")
+    return res;
+}
