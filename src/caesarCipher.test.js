@@ -27,3 +27,7 @@ test('Khoor, Zruog! returns Nkrru, Cuxrj!', () => {
 test('bcd shifted -1 should be abc', () => {
     expect(caesarCipher("bcd", -1)).toBe("abc")
 });
+
+test('a shifted -1 should be z', () => {
+    expect(caesarCipher("a", -1)).toBe("z")
+});
