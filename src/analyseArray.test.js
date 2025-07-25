@@ -7,3 +7,7 @@ test('Function returns something', () => {
 test('Function can calculate average', () => {
     expect(analyseArray([1,8,3,4,2,6])['average']).toBe(4);
 });
+
+test('Function can calculate min', () => {
+    expect(analyseArray([1,8,3,4,2,6])['min']).toBe(1);
+});
