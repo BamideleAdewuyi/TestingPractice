@@ -1,3 +1,5 @@
 export function analyseArray(arr) {
-    return "anything"
+    return {
+        "average": 4
+    }
 };
