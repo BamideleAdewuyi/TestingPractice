@@ -11,3 +11,7 @@ test('Function can calculate average', () => {
 test('Function can calculate min', () => {
     expect(analyseArray([1,8,3,4,2,6])['min']).toBe(1);
 });
+
+test('Function can calculate min', () => {
+    expect(analyseArray([1,8,3,4,2,6])['max']).toBe(8);
+});
